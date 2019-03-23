@@ -11,6 +11,12 @@ class Calculator {
 				case "-":
 					result = subtraction(first, second);
 					break;
+				case "*":
+					result = multiplication(first, second);
+					break;
+				case "/":
+					result = division(first, second);
+					break;
 				default:
 					System.out.println("wrong sign");
 					val.help();
@@ -25,6 +31,19 @@ class Calculator {
 	
 	public double subtraction(double first, double second) {
 		double result = first - second;
+		return result;
+	}
+	
+	public double multiplication(double first, double second) {
+		double result = first * second;
+		return result;
+	}
+	
+	public double division(double first, double second) {
+		if(second == 0) {
+			second = val.getNotZero();
+		}
+		double result = first / second;
 		return result;
 	}
 }
