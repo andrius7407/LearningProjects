@@ -12,7 +12,8 @@ class Calculator {
 					result = subtraction(first, second);
 					break;
 				default:
-					System.out.println(val.help());
+					System.out.println("wrong sign");
+					val.help();
 			}
 		return result;
 	}
