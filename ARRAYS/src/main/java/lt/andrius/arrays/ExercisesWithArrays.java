@@ -91,11 +91,14 @@ public class ExercisesWithArrays {
     }
 
     public static void main(String[] args) {
+
         Random random = new Random();
+
         int firstNumber = random.nextInt(10);
         int secondNumber = random.nextInt(21) + 10;
         System.out.println("x = " + firstNumber + ", y = " + secondNumber);
 
+        //swap values
         int temp = firstNumber;
         firstNumber = secondNumber;
         secondNumber = temp;
