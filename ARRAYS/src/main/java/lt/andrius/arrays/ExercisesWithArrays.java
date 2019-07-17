@@ -92,14 +92,14 @@ public class ExercisesWithArrays {
 
     public static void main(String[] args) {
         Random random = new Random();
-        int x = random.nextInt(10);
-        int y = random.nextInt(21) + 10;
-        System.out.println("x = " + x + ", y = " + y);
+        int firstNumber = random.nextInt(10);
+        int secondNumber = random.nextInt(21) + 10;
+        System.out.println("x = " + firstNumber + ", y = " + secondNumber);
 
-        int temp = x;
-        x = y;
-        y = temp;
-        System.out.println("x = " + x + ", y = " + y);
+        int temp = firstNumber;
+        firstNumber = secondNumber;
+        secondNumber = temp;
+        System.out.println("x = " + firstNumber + ", y = " + secondNumber);
 
         int lengthOfArray = random.nextInt(6) + 20;
         int[] array = new int[lengthOfArray];
