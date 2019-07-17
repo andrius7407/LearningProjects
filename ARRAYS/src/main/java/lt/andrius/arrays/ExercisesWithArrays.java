@@ -91,14 +91,11 @@ public class ExercisesWithArrays {
     }
 
     public static void main(String[] args) {
-        
         Random random = new Random();
-
         int x = random.nextInt(10);
         int y = random.nextInt(21) + 10;
         System.out.println("x = " + x + ", y = " + y);
 
-        //swap values
         int temp = x;
         x = y;
         y = temp;
@@ -123,7 +120,5 @@ public class ExercisesWithArrays {
         printFirstPrimeNumber(array);
 
         System.out.println("Members of array by ascending order: " + Arrays.toString(sortByAscendingOrder(array)));
-
-        //lt.andrius.arrays.BubbleSortTwoDimensionalArray.run();
     }
 }
